@@ -3,7 +3,7 @@
   <header class="page-header">
     <h1>My Cart</h1>
   </header>
-
+  <% if enhanced_cart.length > 0 %>
   <div class="panel panel-default items">
     <table class="table table-bordered">
       <thead>
@@ -49,4 +49,16 @@
     </div>
   </div>
 
+  <% else %>
+  <div class="col-md-12 text-center">
+  <div class="alert alert-success" role="alert">
+  <h4 class="alert-heading">Your Cart Is Currently Empty.</h4>
+  <p>Before proceed to checkout you must add some products to your shopping cart.</p>
+  <hr>
+  <p class="mb-0">Please find what you are looking for and add to your cart.</p>
+  </div>
+  <%= link_to "Return To Shop", root_path, class: "btn btn-success" %>
+  </div>
+<% end %>
+ 
 </section>
