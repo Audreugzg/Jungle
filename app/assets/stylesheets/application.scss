@@ -13,6 +13,7 @@
 
 // Fonts
 // Global
+
 body {
   // padding-top: 70px;
   font-size: 20px;
@@ -113,4 +114,12 @@ form.button_to {
 }
 .text-about {
   color: rgba(255, 255, 255, 0.55) !important;
+  font:rgba(255, 255, 255, 0.55);
+  text-decoration: none;
+}
+
+.text-login {
+  color: rgba(241, 246, 248, 0.852) !important;
+  font:rgba(241, 246, 248, 0.852);
+  text-decoration: none;
 }
